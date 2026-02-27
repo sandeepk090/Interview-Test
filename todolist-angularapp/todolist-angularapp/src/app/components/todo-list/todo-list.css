@@ -1,0 +1,182 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.filter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter button {
+  padding: 8px 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.apply {
+  background: linear-gradient(to right, #7a4ef3, #a85cf9);
+}
+
+.reset {
+  background: linear-gradient(to right, #e254c8, #ff69d5);
+}
+
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+}
+
+tr:hover {
+  background: #f9f9f9;
+}
+
+td input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #4a73ff;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete {
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: white;
+  padding: 25px;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save {
+  background: linear-gradient(to right, #7a4ef3, #a85cf9);
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close {
+  background: linear-gradient(to right, #e254c8, #ff69d5);
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.completed-row {
+  opacity: 0.6;
+}
+
+
+.action-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit {
+  cursor: pointer;
+  font-size: 14px;
+  color: #4b6bff;
+  transition: 0.2s;
+}
+
+.edit:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
+.completed-row td:nth-child(2) {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.caret {
+    display: inline-block;
+    margin-left: 6px;
+    width: 6px;
+    height: 6px;
+    border-right: 1.5px solid #999;
+    border-bottom: 1.5px solid #999;
+    transform: rotate(45deg); /* default ↓ */
+    transition: 0.2s;
+}
+
+/* Up arrow */
+.caret.up {
+    transform: rotate(-135deg);
+}
